@@ -1,4 +1,4 @@
-Here is a SQL query with descriptive statistics of films: 
+Here is a SQL query to find descriptive statistics of films: 
 
 SELECT MIN(release_year) AS min_release_year,
 MAX (release_year) AS max_release_year,

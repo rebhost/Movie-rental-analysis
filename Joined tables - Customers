@@ -1,0 +1,15 @@
+Here is a SQL query with joined tables finding the top 5 customers:
+
+(SELECT E.customer_id, A.first_name, A.last_name, C.city, D.country, SUM (amount) AS total_paid
+FROM customer A
+INNER JOIN address B ON A.address_id=B.address_id
+INNER JOIN city C on B.city_id=C.city_id
+INNER JOIN country D on C.country_id=d.country_id
+INNER JOIN payment E on A.customer_id=E.customer_id
+WHERE D.country IN ('India', 'China', 'United States', 'Japan', 'Mexico', 
+					'Brazil', 'Russian Federation', 'Phillipines', 'Turkey', 'Indonesia')
+AND C.city in ('Aurora', 'Pingxiang', 'Sivas', 'Dhule (Dhulia)', 'Kurashiki', 'Xintai', 
+			   'Adoni', 'Celaya', 'Nezahulacyoti', 'Atlixco')
+GROUP BY E.customer_id, A.first_name, A.last_name, C.city, D.country
+ORDER BY SUM (amount) DESC
+LIMIT 5)

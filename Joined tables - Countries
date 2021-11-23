@@ -1,4 +1,4 @@
-Here is a SQL query with joined tables:
+Here is a SQL query with joined tables to find top 10 countries:
 
 SELECT d.country, COUNT (customer_id)
 FROM customer A

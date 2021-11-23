@@ -1,4 +1,4 @@
-Here is a SQL query with descrptive statistics of customers: 
+Here is a SQL query to find the descrptive statistics of customers: 
 
 SELECT MIN(customer_id) AS min_customer_id,
 MAX (customer_id) AS max_customer_id,

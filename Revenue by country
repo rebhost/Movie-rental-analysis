@@ -1,0 +1,13 @@
+Here is a SQL query to find the revenue in the top 10 countries:
+
+SELECT d.country, SUM(E.amount) AS revenue
+FROM customer A
+INNER JOIN address B ON A.address_id=B.address_id
+INNER JOIN city C ON B.city_id=C.city_id
+INNER JOIN country D ON C.country_id=D.country_id
+INNER JOIN payment E ON A.customer_id=E.customer_id
+WHERE D.country IN ('India', 'China', 'United States', 'Japan', 'Mexico', 
+					'Brazil', 'Russian Federation', 'Phillipines', 'Turkey', 'Indonesia')
+GROUP BY D.country
+ORDER BY revenue DESC
+LIMIT 10

@@ -14,6 +14,17 @@ Where are customers with a high lifetime value based?
 Do sales figures vary between geographic regions?
 
 The data set contains information about Rockbuster’s film inventory, customers, and payments, among other things. 
+(No source was provided for the dataset)
+
+Summary of results:
+1. Sports, Sci-Fi and Animation are the top performing genres in revenue.
+2. The average rental duration is 5 days.
+3. Customers are based all over the world, with most customers located in India, China and the USA.
+4. Customers with high lifetime value are based in Mexico, Turkey, the USA and India.
+5. Sales figures vary between regions:
+India (top 1) = $6,033
+Indonesia (top 10) = $1,353
+
 
 Link to Tableau presentation:
 https://public.tableau.com/app/profile/rebecca.ostgard/viz/RockbusterDataAnalysis_16335130874760/Story1?publish=yes
